@@ -1,1 +1,105 @@
-Hello, world. Welcome to vinoculusai.github.io.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vinoculus.ai</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:wght@600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="bg-overlay"></div>
+
+  <!-- Top Bar with Logo and Nav -->
+  <header class="top-bar">
+    <div class="top-bar-content">
+      <div class="logo-wrapper">
+        <img src="images/vinologo_red.png" alt="Vinoculus Logo" class="logo-top" />
+      </div>
+      <div class="language-selector">
+        <button id="lang-en" class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+        <button id="lang-th" class="lang-btn" onclick="switchLanguage('th')">TH</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="container">
+      <div class="content-en">
+        <p><strong>Something unseen is awakening …</strong></p>
+        
+        <p style="text-align: right;">Whispers of possibility circle a small studio in Bangkok. A few stubborn dreamers have found each other, trading sleep for experiments they won’t yet name. What matters is the question that keeps us awake:</p>
+        
+        <p style="text-align: right;">What would the world look like if the power of intelligent machines felt as natural—and as trusted—as switching on a light?</p>
+        
+        <p style="text-align: right;">We see the distance between today and that answer. We feel the weight of closed doors, steep costs, and slow-moving systems. And we’re convinced the shortest path across isn’t another product launch—it’s a shift in how people imagine what’s possible.</p>
+        
+        <p style="text-align: right;">So we’re building quietly. No press releases, no crowded roadmaps: just small, deliberate steps that add up to something most will call obvious—after it arrives.</p>
+        
+        <p style="text-align: right;">If you gravitate toward unsolved problems—or you back the people who do—leave a trace below. When the curtain lifts, you’ll hear the first note.</p>
+        
+        <p style="text-align: right;"><strong>The future beckons.<br>Are you ready to see what comes next?</strong></p>
+        
+        <div class="disclaimer">
+          <p><small>*This content has been created with AI assistance. While we strive for accuracy, please verify important information independently.</small></p>
+        </div>
+      </div>
+      
+      <div class="content-th" style="display: none;">
+        <p><strong>สิ่งที่มองไม่เห็นกำลังตื่นขึ้น …</strong></p>
+        
+        <p style="text-align: right;">เสียงกระซิบแห่งความเป็นไปได้ล้อมรอบสตูดิโอเล็กๆ ในกรุงเทพฯ นักฝันที่ดื้อรั้นไม่กี่คนได้พบกัน แลกเปลี่ยนการนอนหลับเพื่อการทดลองที่พวกเขายังไม่ตั้งชื่อ สิ่งที่สำคัญคือคำถามที่ทำให้เราตื่น:</p>
+        
+        <p style="text-align: right;">โลกจะเป็นอย่างไรหากพลังของเครื่องจักรอัจฉริยะรู้สึกเป็นธรรมชาติ—และได้รับความไว้วางใจ—เหมือนการเปิดไฟ?</p>
+        
+        <p style="text-align: right;">เรามองเห็นระยะห่างระหว่างวันนี้และคำตอบนั้น เรารู้สึกถึงน้ำหนักของประตูที่ปิดอยู่ ค่าใช้จ่ายที่สูง และระบบที่เคลื่อนไหวช้า และเรามั่นใจว่าหนทางที่สั้นที่สุดไม่ใช่การเปิดตัวผลิตภัณฑ์อีกตัว—แต่เป็นการเปลี่ยนแปลงในวิธีที่ผู้คนจินตนาการถึงสิ่งที่เป็นไปได้</p>
+        
+        <p style="text-align: right;">ดังนั้นเราจึงสร้างอย่างเงียบๆ ไม่มีข่าวประชาสัมพันธ์ ไม่มีแผนงานที่แออัด: เพียงแค่ก้าวเล็กๆ ที่ตั้งใจซึ่งรวมกันเป็นสิ่งที่คนส่วนใหญ่จะเรียกว่าชัดเจน—หลังจากที่มันมาถึง</p>
+        
+        <p style="text-align: right;">หากคุณดึงดูดปัญหาที่ยังไม่ได้รับการแก้ไข—หรือคุณสนับสนุนคนที่ทำ—ฝากร่องรอยไว้ด้านล่าง เมื่อม่านเปิด คุณจะได้ยินโน้ตแรก</p>
+        
+        <div class="disclaimer">
+          <p><small>*เนื้อหานี้ได้รับการสร้างด้วยความช่วยเหลือจาก AI แม้ว่าเราจะพยายามให้ข้อมูลที่ถูกต้อง กรุณาตรวจสอบข้อมูลสำคัญอย่างอิสระ</small></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="separator"></div>
+  </main>
+  
+  <!-- Fixed Contact Link -->
+  <div class="contact-link">
+    <a href="mailto:info@vinoculus.ai" class="contact-en">Contact us</a>
+    <a href="mailto:info@vinoculus.ai" class="contact-th" style="display: none;">ติดต่อเรา</a>
+  </div>
+
+  <script>
+    function switchLanguage(lang) {
+      const enContent = document.querySelector('.content-en');
+      const thContent = document.querySelector('.content-th');
+      const enContact = document.querySelector('.contact-en');
+      const thContact = document.querySelector('.contact-th');
+      const enBtn = document.getElementById('lang-en');
+      const thBtn = document.getElementById('lang-th');
+      
+      if (lang === 'en') {
+        enContent.style.display = 'block';
+        thContent.style.display = 'none';
+        enContact.style.display = 'inline';
+        thContact.style.display = 'none';
+        enBtn.classList.add('active');
+        thBtn.classList.remove('active');
+        document.documentElement.lang = 'en';
+      } else {
+        enContent.style.display = 'none';
+        thContent.style.display = 'block';
+        enContact.style.display = 'none';
+        thContact.style.display = 'inline';
+        thBtn.classList.add('active');
+        enBtn.classList.remove('active');
+        document.documentElement.lang = 'th';
+      }
+    }
+  </script>
+</body>
+</html>
